@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+</head>
+<style>
+body{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 15vh;
+    background-color: rgba(153, 153, 153, 0.459);
+}
+
+.links {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.button {
+    align-self: center;
+    padding: 1.5rem;
+}
+.footer {
+    display: flex;
+    height: 15vh;
+    background-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+}
+
+    
+</style>
+<body>
+    <section style="height: 100vh;">
+        <div class="header">
+            <div class="links">
+                <div class="link">link 1</div>
+                <div class="link">link 2</div>
+                <div class="link">link 3</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sidebar-left"></div>
+            <button class="button">Reverse!</button>
+            <div class="sidebar-right"></div>
+        </div>
+    </section>
+        
+    <section style="height: 100vh; background-color: aquamarine; display: flex; justify-content: center;">
+        <div class="content-wrapper" style="padding: 2rem; background-color: pink; align-self: center;">
+            <h1 class="header-2" style="font-size: 50px;">FUCK ME</h1>
+        </div>
+
+    </section>
+<script>
+   
+   
+    
+        gsap.from('.content-wrapper', { duration: 1, y: '-100%', ease: 'bounce' })
+        gsap.from('.header-2', { duration: 1, opacity: 0, delay: 1, stagger: .5})
+        gsap.from('.right', )
+    
+   
+</script>
+</body>
+</html>

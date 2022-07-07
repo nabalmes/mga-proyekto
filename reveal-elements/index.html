@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="section section">
+        <h1>Neil Adrian Balmes</h1>
+    </section>
+    <section class="section section1" >
+        <div class="container reveal">
+            <h2>Web Developer</h2>
+            <div class="cards">
+                <div class="text-cards">
+                    <h3> Future success </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, pariatur vel ipsum quae odit minus illo qui ullam ab veniam? Magnam, repudiandae sunt!</p>
+                </div>
+                <div class="text-cards">
+                    <h3> Future success </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, pariatur vel ipsum quae odit minus illo qui ullam ab veniam? Magnam, repudiandae sunt!</p>
+                </div>
+                <div class="text-cards">
+                    <h3> Future success </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, pariatur vel ipsum quae odit minus illo qui ullam ab veniam? Magnam, repudiandae sunt!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section2">
+        <div class="container reveal">
+            <h2>Web Developer</h2>
+            <div class="cards">
+                <div class="text-cards">
+                    <h3> Future success </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, pariatur vel ipsum quae odit minus illo qui ullam ab veniam? Magnam, repudiandae sunt!</p>
+                </div>
+                <div class="text-cards">
+                    <h3> Future success </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, pariatur vel ipsum quae odit minus illo qui ullam ab veniam? Magnam, repudiandae sunt!</p>
+                </div>
+                <div class="text-cards">
+                    <h3> Future success </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, pariatur vel ipsum quae odit minus illo qui ullam ab veniam? Magnam, repudiandae sunt!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section3">
+        <div class="container reveal">
+            <h2>Web Developer</h2>
+            <div class="cards">
+                <div class="text-cards">
+                    <h3> Future success </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, pariatur vel ipsum quae odit minus illo qui ullam ab veniam? Magnam, repudiandae sunt!</p>
+                </div>
+                <div class="text-cards">
+                    <h3> Future success </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, pariatur vel ipsum quae odit minus illo qui ullam ab veniam? Magnam, repudiandae sunt!</p>
+                </div>
+                <div class="text-cards">
+                    <h3> Future success </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, pariatur vel ipsum quae odit minus illo qui ullam ab veniam? Magnam, repudiandae sunt!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section4">
+        <div class="container reveal">
+            <h2>Web Developer</h2>
+            <div class="cards">
+                <div class="text-cards">
+                    <h3> Future success </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, pariatur vel ipsum quae odit minus illo qui ullam ab veniam? Magnam, repudiandae sunt!</p>
+                </div>
+                <div class="text-cards">
+                    <h3> Future success </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, pariatur vel ipsum quae odit minus illo qui ullam ab veniam? Magnam, repudiandae sunt!</p>
+                </div>
+                <div class="text-cards">
+                    <h3> Future success </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, pariatur vel ipsum quae odit minus illo qui ullam ab veniam? Magnam, repudiandae sunt!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+    window.addEventListener('scroll', reveal);
+    
+    function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+
+        for(var i = 0; i < reveals.length; i++){
+
+
+            var windowheight = window.outerHeight;
+            var revealTop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            // console.log(revealTop);
+           
+           
+
+            if(revealTop < windowheight - revealpoint) {
+                reveals[i].classList.add('active');
+            }
+            else
+            {
+                reveals[i].classList.remove('active'); 
+            }
+        }     
+         
+    }
+
+    
+  
+</script>
+
+</body>
+</html>

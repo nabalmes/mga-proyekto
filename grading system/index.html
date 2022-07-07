@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading System</title>
+    <style>
+        
+    </style>
+</head>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    table {
+    border: 1px solid;
+    padding: 10px;
+    }
+
+    table tr td {
+        padding: 5px;
+    }
+
+    .input-container {
+        padding: 5px;
+    }
+</style>
+<body>
+    
+<table>
+<tr>
+    <td>
+        <div id="inputs">
+            <input class="input-container" id="Subject1" type="number" placeholder="Object Oriented Programming"></input>
+        </div>
+    </td>  
+</tr>
+<tr>
+    <td>
+    <div>
+        <input class="input-container" id="Subject2" type="number" placeholder="Discreet Math"></input>
+    </div>
+    </td>
+<tr>
+<tr>
+    <td>
+        <div>
+            <input class="input-container" id="Subject3" type="number" placeholder="Algebra"></input>
+        </div>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div>
+            <input class="input-container" id="Subject4" type="number" placeholder="Turbo C"></input>
+        </div>
+    </td>
+</tr>
+<tr>   
+    <td>
+        <div>
+            <input class="input-container" id="Subject5" type="number" placeholder="Online Tech"></input>
+        </div>
+    </td>
+</tr>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+</table>
+
+
+
+   
+   
+   
+   
+      <button class="button" id="calcbtn" onclick="gwaBtn()">GWA</button>
+      
+      <h1 id="grade"></h1>
+      <h1 id="gwa"></h1>
+      <script>
+        function gwaBtn(){
+            let subj1 = document.getElementById('Subject1').value
+            let subj2 = document.getElementById('Subject2').value
+            let subj3 = document.getElementById('Subject3').value
+            let subj4 = document.getElementById('Subject4').value
+            let subj5 = document.getElementById('Subject5').value
+            let total = document.getElementById('gwa')
+            
+
+
+            total = (parseInt(subj1) + parseInt(subj2) + parseInt(subj3) + parseInt(subj4) + parseInt(subj5))/5  
+            
+            document.getElementById("gwa").innerHTML = "GWA is:"+' '+ total; 
+            grade 
+            if (total <= 60){
+                document.getElementById("grade").innerHTML = "Your grade is 5"; 
+            }
+            else if(total <= 74){
+                document.getElementById("grade").innerHTML = "Your grade is 4"; 
+            }
+            else if(total <= 79){
+                document.getElementById("grade").innerHTML = "Your grade is 3"; 
+            }
+            else if(total <= 89){
+                document.getElementById("grade").innerHTML = "Your grade is 2"; 
+            }
+            else if(total <= 99){
+                document.getElementById("grade").innerHTML = "Your grade is 1"; 
+            }
+            
+        }
+         
+      </script>
+</body>
+</html>

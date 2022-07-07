@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+       transition: 1s ease;
+    }
+    
+</style>
+<body>
+    
+      <table>
+         <tr>
+            <td colspan="3"><input type="text" id="firstNum"/></td>
+            <td colspan="3"><input type="text" id="operator"/></td>
+            <td colspan="3"><input type="text" id="secondNum"/></td>
+      
+            <td><input id="clear" type="button" value="c"/> </td>
+            <td><input id="myBtn"  type="button" value="="/> </td>
+         </tr>
+     
+      </table>
+      <h1 id="answer"></h1>
+
+<script>
+        
+      
+
+       function solve(){
+
+         let num1 = document.getElementById('firstNum').value
+         let num2 = document.getElementById('secondNum').value
+         let operator = document.getElementById('operator').value
+         
+         
+         
+         if (operator == "+") {
+            answer = parseInt(num1) + parseInt(num2);
+            document.getElementById("answer").innerHTML = "Answer:"+' '+ answer; 
+         }
+          if (operator == "-"){
+               answer = parseInt(num1) - parseInt(num2);
+               document.getElementById("answer").innerHTML = "Answer:"+' '+ answer; 
+         }
+         if (operator == "*"){
+               answer = parseInt(num1) * parseInt(num2);
+               document.getElementById("answer").innerHTML = "Answer:"+' '+ answer; 
+         }
+         if (operator == "/"){
+               answer = parseInt(num1) / parseInt(num2);
+               document.getElementById("answer").innerHTML = "Answer:"+' '+ answer;  
+         }
+      }        
+            
+        let clrbtn = document.getElementById('clear');
+       clrbtn.addEventListener('click', clr);
+       
+         
+        function clr(){
+            let clr = document.getElementById('firstNum').value = ""
+            let clrs = document.getElementById('secondNum').value = ""
+            let clrr = document.getElementById('operator').value = ""
+            
+        }
+
+        let btn = document.getElementById('myBtn'); 
+         btn.addEventListener('click', solve);
+      
+    
+     
+           
+         
+</script>    
+</body>
+</html>

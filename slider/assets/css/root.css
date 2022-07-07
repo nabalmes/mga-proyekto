@@ -1,0 +1,115 @@
+:root {
+	--font-sans: "Poppins", sans-serif;
+	--font-serif: "Noto Serif", sans-serif;
+	--font-cursive: "Great Vibes", cursive;
+	--font-mono: monospace;
+
+	--secondary-main: #F7382D;
+	--secondary-main-light: #F08E8E;
+
+	--primary-main: #EC191E;
+	--primary-main-light: #EB5659;
+
+	--primary-dark: #2B2727;
+	--primary-grey-dark: #333333;
+	--primary-grey: #999999;
+	--primary-grey-light: #F2F2F2;
+	--primary-light: #FFFFFF;
+
+	--primary-grey-lighter: #F3F3F3;
+	--primary-grey-lightest: #FAFAFA;
+	--primary-white-smoke: #FDF0F0;
+	--primary-floral-white: #FAF7F2;
+	--primary-whisper: #F5EAEA;
+	--primary-sauvignon: #EFE8E3;
+	--primary-pattens-blue: #E7EDF0;
+	--primary-hawkes-blue: #D9DFEB;
+	--primary-eclipse: #3A3636;
+
+	--color-danger: #F94F51;
+	--color-warning: #FEAF46;
+	--color-info: #00C1E0;
+	--color-success: #02B854;
+
+	--color-wedding: #f093a1;
+	--color-wedding-bg: #f5e3df;
+
+	--color-events: #FCCC3D;
+
+    --color-wedding: #F39672;
+    --color-special: #A477AF;
+    --color-birthday: #F7382D;
+    --color-business: #02778B;
+    --color-emerald: #015939;
+    --color-sapphire: #01419b;
+
+    --color-diamond: #b9f2ff;
+    --color-platinum: #E5E4E2;
+    --color-platinum-sec: #797979;
+    --color-gold: #FFCD73;
+
+    --color-empress: #DA99A9;
+    --color-queen: #E6AAB1;
+    --color-princess: #F7CBC9;
+
+    --color-premiere: #89AEB2;
+    --color-deluxe: #FF8FA4;
+
+
+	--shadow-main: 0px 5px 15px -5px rgba(236, 25, 30, .75);
+	--shadow-main-light: 0px 5px 15px -5px rgba(240, 81, 81, .75);
+	--shadow-dark: 0px 5px 15px -5px rgba(16, 19, 22, .75);
+	--shadow-grey-dark: 0px 5px 15px -5px rgba(51, 51, 51, .75);
+	--shadow-grey: 0px 5px 15px -5px rgba(153, 153, 153, .75);
+	--shadow-grey-light: 0px 5px 15px -5px rgba(242, 242, 242, .75);
+	--shadow-light: 0px 5px 15px -5px rgba(255, 255, 255, 0.75);
+
+	--shadow-events: 0px 5px 15px -5px rgba(252, 204, 61, 1);
+	--shadow-wedding: 0px 5px 15px -5px rgba(243, 150, 114, 1);
+	--shadow-special: 0px 5px 15px -5px rgba(164, 119, 175, 1);
+	--shadow-emerald: 0px 5px 15px -5px rgba(1, 89, 57, 1);
+	--shadow-sapphire: 0px 5px 15px -5px rgba(1, 65, 155, 1);
+
+	--shadow-diamond: 0px 5px 15px -5px rgba(185, 242, 255, 1);
+	--shadow-platinum: 0px 5px 15px -5px rgba(229, 228, 226, 1);
+	--shadow-gold: 0px 5px 15px -5px rgba(255, 205, 115, 1);
+
+	--shadow-premiere: 0px 5px 15px -5px rgba(137, 174, 178, 1);
+	--shadow-deluxe: 0px 5px 15px -5px rgba(255, 143, 164, 1);
+
+	--shadow-small: 0 5px 10px rgba(0, 0, 0, 0.12);
+	--shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
+	--shadow-large: 0 30px 60px rgba(0, 0, 0, 0.12);
+
+	--mobile-s-width: 320px;
+	--mobile-m-width: 375px;
+	--mobile-l-width: 425px;
+	--tablet-width: 768px;
+	--laptop-width: 1024px;
+	--laptop-m-width: 1200px;
+	--laptop-l-width: 1440px;
+	--desktop-width: 1680px;
+	--four-k-width: 2560px;
+
+	--header-buttons: clamp(32px, 50px, 64px);
+
+	--space-1: 8px;
+	--space-2: 16px;
+	--space-3: 24px;
+	--space-4: 32px;
+	--space-5: 40px;
+	--space-6: 48px;
+	--space-7: 56px;
+	--space-8: 64px;
+	--space-9: 72px;
+	--space-10: 80px;
+	--space-11: 88px;
+
+	--font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+	--font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+	--font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+	--font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+	--font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+	--font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+	--font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+}
