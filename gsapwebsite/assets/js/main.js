@@ -14,3 +14,18 @@ const mobileMenu = function() {
 }
 
 menu.addEventListener('click', mobileMenu)
+
+//test btn
+
+var testBtn = document.querySelector('.testBtn');
+testBtn.addEventListener('click', react, false);
+
+function react(e){
+    if(e.target !== e.currentTarget){
+        var clickedItem = e.target.id;
+        console.log(clickedItem);
+        alert ('hello' + clickedItem);
+    }
+
+    e.stopPropagation();
+}
